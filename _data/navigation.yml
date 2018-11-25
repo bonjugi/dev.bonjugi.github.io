@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: Projects
+  url: /projects/
+
+- title: Post
+  url: /posts/
+
+- title: Tag
+  url: /tags/
