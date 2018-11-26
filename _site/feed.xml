@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-26T15:41:25+09:00</updated><id>/</id><title type="html">Bonjugi’s Blog</title><subtitle>안녕하세요 Bonjugi의 블로그에 오신것을 환영합니다.</subtitle><entry><title type="html">토스 유저 생성 흐름</title><link href="/%ED%86%A0%EC%8A%A4%EC%9C%A0%EC%A0%80_%EC%83%9D%EC%84%B1_%ED%94%8C%EB%A1%9C%EC%9A%B0/" rel="alternate" type="text/html" title="토스 유저 생성 흐름" /><published>2018-11-26T00:00:00+09:00</published><updated>2018-11-26T00:00:00+09:00</updated><id>/토스유저_생성_플로우</id><content type="html" xml:base="/%ED%86%A0%EC%8A%A4%EC%9C%A0%EC%A0%80_%EC%83%9D%EC%84%B1_%ED%94%8C%EB%A1%9C%EC%9A%B0/">&lt;h2 id=&quot;개요1-admin-요청-및-batch에서의-queue-저장&quot;&gt;개요1. Admin 요청 및 Batch에서의 Queue 저장&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-27T02:03:26+09:00</updated><id>/</id><title type="html">Bonjugi’s Blog</title><subtitle>안녕하세요 Bonjugi의 블로그에 오신것을 환영합니다.</subtitle><entry><title type="html">Intelij resource 파일 수정시 자동 배포</title><link href="/Intelij-resource%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%EC%8B%9C-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC/" rel="alternate" type="text/html" title="Intelij resource 파일 수정시 자동 배포" /><published>2018-11-26T00:00:00+09:00</published><updated>2018-11-26T00:00:00+09:00</updated><id>/Intelij-resource파일-수정시-자동배포</id><content type="html" xml:base="/Intelij-resource%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%EC%8B%9C-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC/">&lt;p&gt;인텔리제이에 톰캣을 연동하여 사용하다보면 .jsp 는 물론 html css js 같은 정적 리소스들을 Run 중에 수정시, 수정내용이 자동 적용되지 않습니다.
+따라서 위와 같은 정적페이지 및 jsp 내의 서블릿코드들을 자동으로 배포할수 있도록 설정하는 방법을 설명 하겠습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;rundebug-configuration-에서의-변경&quot;&gt;Run/debug Configuration 에서의 변경.&lt;/h3&gt;
+
+&lt;p&gt;Edit Configuration 에 들어가서 &lt;code class=&quot;highlighter-rouge&quot;&gt;On frame deactivation&lt;/code&gt; 의 설정을 &lt;code class=&quot;highlighter-rouge&quot;&gt;update classes and resources&lt;/code&gt; 로 변경합니다.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;On frame deactivation - 프레임 비활성화 시 라는 의미인데 정확히 어떤 시점인지 모르겠습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/img/upload/update-classes-and-resources1.png&quot; alt=&quot;Image Alt 텍스트&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;run-window-에서의-변경&quot;&gt;Run window 에서의 변경&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Update resources on frame deactivation&lt;/code&gt; 버튼을 눌러 기능 활성화 합니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/img/upload/update-classes-and-resources2.png&quot; alt=&quot;Image Alt 텍스트&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;참고로 이 방법들 만으로는 maven 프로젝트의 java파일 까지 핫디플로이를 해주진 않는다고 합니다.
+다음 포스트에서 java 파일도 핫디플로이 가 되게끔 설정을 변경 하도록 하겠습니다.&lt;/p&gt;</content><category term="intelij" /><category term="hot deploy" /><summary type="html">Intelij는 기본적으로 파일 수정시 자동 배포가 이루어지지 않습니다. 설정을 바꿔서 자동배포가 이뤄지도록 합니다.</summary></entry><entry><title type="html">Intelij java 파일 수정시 자동 배포</title><link href="/Intelij-java%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%EC%8B%9C-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC/" rel="alternate" type="text/html" title="Intelij java 파일 수정시 자동 배포" /><published>2018-11-26T00:00:00+09:00</published><updated>2018-11-26T00:00:00+09:00</updated><id>/Intelij-java파일-수정시-자동배포</id><content type="html" xml:base="/Intelij-java%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%EC%8B%9C-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC/">&lt;p&gt;이전 포스팅 &lt;a href=&quot;/Intelij-resource파일-수정시-자동배포/&quot; title=&quot;Intelij-resource파일-수정시-자동배포/&quot;&gt;Intelij-resource파일-수정시-자동배포&lt;/a&gt;
+에서는 resource 파일 수정시 바로 적용하는 설정을 알아 봤습니다.
+이번에는 java파일 수정시 리빌드 및 재배포까지 이뤄지도록 하는 설정을 알아 볼텐데요.
+사실 dev-tools 의 설명이라고 봐야할것 같습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;dev-tools&quot;&gt;dev-tools?&lt;/h3&gt;
+&lt;p&gt;dev-tools에는 Property Default, Automatic restart, Live Reload 같은 큼직한 기능들이 있습니다.
+Property Default는 thymeleaf같은 템플릿 엔진 사용시에 캐싱을 disable 해주고
+Live Reload는 view page 소스코드를 수정하는 즉시 브라우저가 리로드 되는 기능 입니다.
+제가 주요하게 볼것은 자동 재배포. 즉 Automatic restart 기능에 대해서만 설명하겠습니다.
+다른 주요 기능들을 자세히 보시려면 아래 출처를 방문하여 확인해 주세요.
+&lt;a href=&quot;http://haviyj.tistory.com/11&quot;&gt;출처 haviyj님의 블로그&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;dev-tools-의존성-추가&quot;&gt;dev-tools 의존성 추가.&lt;/h3&gt;
+&lt;p&gt;dev-tools에는 라이브리로드 등&lt;/p&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-devtools&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;scope&amp;gt;&lt;/span&gt;runtime&lt;span class=&quot;nt&quot;&gt;&amp;lt;/scope&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;registry-수정&quot;&gt;registry 수정&lt;/h3&gt;
+&lt;p&gt;앱이 실행중에 컴파일러가 자동 생성하는것을 허용 하도록 설정 변경 합니다.
+&lt;img src=&quot;/assets/img/upload/intelij-registry.png&quot; alt=&quot;&quot; title=&quot;registry캡처&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;build-project-automatically-체크&quot;&gt;Build project automatically 체크&lt;/h3&gt;
+&lt;p&gt;옵션명 처럼 빌드를 자동적으로 해준다는것 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/upload/build-project-automatically.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 하면 앱이 running중에도 java 소스 변경시 알아서 빌드하고 target에 deploy해줍니다.
+재compile 및 deploy를 하기 때문에 어쨋든 시간이 소요 되긴 하지만, restart보다는 훨씬 빠르다고 합니다.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;요 말은 출처가 기억이 안나네요..&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="intelij" /><category term="hot deploy" /><summary type="html">Intelij는 기본적으로 파일 수정시 자동 배포가 이루어지지 않습니다. 설정을 바꿔서 자동배포가 이뤄지도록 합니다.</summary></entry><entry><title type="html">토스 유저 생성 흐름</title><link href="/%ED%86%A0%EC%8A%A4%EC%9C%A0%EC%A0%80_%EC%83%9D%EC%84%B1_%ED%94%8C%EB%A1%9C%EC%9A%B0/" rel="alternate" type="text/html" title="토스 유저 생성 흐름" /><published>2018-11-26T00:00:00+09:00</published><updated>2018-11-26T00:00:00+09:00</updated><id>/토스유저_생성_플로우</id><content type="html" xml:base="/%ED%86%A0%EC%8A%A4%EC%9C%A0%EC%A0%80_%EC%83%9D%EC%84%B1_%ED%94%8C%EB%A1%9C%EC%9A%B0/">&lt;h2 id=&quot;개요1-admin-요청-및-batch에서의-queue-저장&quot;&gt;개요1. Admin 요청 및 Batch에서의 Queue 저장&lt;/h2&gt;
 &lt;p&gt;Admin은 rmi를 통해 Batch에게 extract 요청만 하고, 이후부터는 Batch에서 관리하는 구조이다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Admin에서 extract 요청을 하면 com.skt.moment.tos.rmi.TosServiceImpl 의 extract 메소드가 수행된다.&lt;/li&gt;
@@ -389,6 +446,14 @@ mathjax: true
     &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pagination&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navigation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     {% if page.previous %}
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.url }}{{ page.previous.url }}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ page.previous.title }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
@@ -610,43 +675,4 @@ Available values: [1..3].&lt;/li&gt;
 
 &lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
 
-&lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;</content><category term="sample post" /><category term="readability" /><category term="test" /><category term="image" /><category term="feature" /><summary type="html">A ton of text to test readability with image feature.</summary></entry><entry><title type="html">Testing Readability with a Bunch of Text</title><link href="/readability-post/" rel="alternate" type="text/html" title="Testing Readability with a Bunch of Text" /><published>2012-05-22T00:00:00+09:00</published><updated>2012-05-22T00:00:00+09:00</updated><id>/readability-post</id><content type="html" xml:base="/readability-post/">&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
-
-&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-
-&lt;h2 id=&quot;cupidatat-90s-lo-fi-authentic-try-hard&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
-
-&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sartorial hoodie&lt;/li&gt;
-  &lt;li&gt;Labore viral forage&lt;/li&gt;
-  &lt;li&gt;Tote bag selvage&lt;/li&gt;
-  &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
-
-&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
-
-&lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
-
-&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
-
-&lt;h2 id=&quot;hoodie-duis&quot;&gt;Hoodie Duis&lt;/h2&gt;
-
-&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
-
-&lt;h3 id=&quot;thundercats-ho&quot;&gt;Thundercats Ho!&lt;/h3&gt;
-
-&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
-
-&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
-
-&lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;</content><category term="sample post" /><category term="readability" /><category term="test" /><summary type="html">A ton of text to test readability.</summary></entry></feed>
+&lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;</content><category term="sample post" /><category term="readability" /><category term="test" /><category term="image" /><category term="feature" /><summary type="html">A ton of text to test readability with image feature.</summary></entry></feed>

@@ -24,6 +24,14 @@ To modify styling and highlight colors edit `/assets/css/syntax.css`.
 }
 {% endhighlight %}
 
+```css
+#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+```
+
 {% highlight html %}
 {% raw %}
 <nav class="pagination" role="navigation">
