@@ -1,17 +1,16 @@
 ---
 layout: post
-title:  "Spring 테스트하기 @RunWith @ContextConfiguration"
+title:  "Spring TEST 1부. 어플리케이션 테스트 @RunWith @ContextConfiguration"
 date:   2019-03-25
 excerpt: ""
 tag:
 - Spring
+- TEST
 - RunWith
 - ContextConfiguration
-- TEST
 ---
 
-
-# 1부 Spring 테스트하기
+# Spring TEST 1부.  어플리케이션 테스트
 ## @RunWith(SpringJUnit4ClassRunner.class)
 
 SpringJUnit4ClassRunner가 스프링 통합테스트를 위한 환경을 제공 한다.

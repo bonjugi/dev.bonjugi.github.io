@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Spring MVC 테스트하기"
-date:   2019-03-25
+title:  "Spring TEST 2부. 서블릿 테스트 @WebAppConfiguration"
+date:   2019-03-26
 excerpt: ""
 tag:
 - spring
@@ -12,7 +12,7 @@ tag:
 - Mockito
 ---
 
-# 2부 Spring-MVC 테스트하기
+# Spring TEST 2부. 서블릿 테스트
 1부에서 2개의 클래스레벨 어노테이션을 추가하여  스프링 통합테스트를 할수 있었다.
 - @RunWith(SpringJUnit4ClassRunner.class)  
 - @ContextConfiguration(classes = {RootConfig.class})
