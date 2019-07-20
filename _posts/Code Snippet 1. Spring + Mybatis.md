@@ -1,8 +1,10 @@
 ---
-tags: snippet
+layout: post
+date:   2019-07-20
+excerpt: ""
+tag:
+- snippet
 ---
-Code Snippet 1. Spring + Mybatis
-===
 
 테스트 용이성과 객체간의 커뮤니케이션을 중요시 하고 있습니다.
 다만 Spring Boot + JPA 환경이 아닌, Spring + MyBatis 기반의 코드 입니다. 따라서 Repository 대신 DAO 같은 용어가 나오거나, MockMvc 를 직접 설정 해줘야 하는 차이가 있습니다. 
